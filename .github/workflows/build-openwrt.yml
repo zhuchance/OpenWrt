@@ -4,6 +4,7 @@
 # Lisence: MIT
 # Author: P3TERX
 # Blog: https://p3terx.com
+# 20200720 change open ssh&update Firmware to We­Trans­fer
 #=================================================
 
 name: Build OpenWrt With passwall
@@ -27,9 +28,10 @@ env:
   CONFIG_FILE: .config.passwall
   DIY_SH: diy_passwall.sh
   FREE_UP_DISK: true
-  SSH_ACTIONS: false
+  SSH_ACTIONS: true
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
+  UPLOAD_WERANSFER: true
   TZ: Asia/Shanghai
 
 jobs:
